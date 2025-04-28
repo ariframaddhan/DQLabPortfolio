@@ -188,7 +188,7 @@ def lungcancer():
         df = input_data
         prediction = model_loaded.predict(df)
         st.write("Prediction:")
-        result = [ "Unfortunalety you are potentially infected by Lung Cancer, please go to the doctor for futher treatment" if prediction == 1 else "Yeay, you are healthy enough. Keep your healty lifestyle!"]
+        result = [ "Unfortunalety you are potentially infected by Lung Cancer, please go to the doctor for futher treatment" if prediction == 1 else "Yeay, you are healthy enough. Keep your healthy lifestyle!"]
         output = str(result[0])
         with st.spinner("Loading..."):
             time.sleep(2)
